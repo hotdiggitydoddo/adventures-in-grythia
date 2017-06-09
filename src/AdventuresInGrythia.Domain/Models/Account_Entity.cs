@@ -1,6 +1,6 @@
 namespace AdventuresInGrythia.Domain.Models
 {
-     public class Account_Entity
+    public class Account_Entity
     {
         public int AccountId { get; set; }
         public int EntityId { get; set; }
