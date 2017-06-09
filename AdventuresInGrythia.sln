@@ -1,0 +1,28 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+# Visual Studio 15
+VisualStudioVersion = 15.0.26124.0
+MinimumVisualStudioVersion = 15.0.26124.0
+Project("{2150E333-8FDC-42A3-9474-1A3956D46DE8}") = "src", "src", "{7CB5EAA7-6A21-48DD-995E-8C8BEBBEEC10}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventuresInGrythia.Engine", "src\AdventuresInGrythia.Engine\AdventuresInGrythia.Engine.csproj", "{5F4E989B-BC5C-4925-A7A7-9DF3E3EDA279}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventuresInGrythia.Domain", "src\AdventuresInGrythia.Domain\AdventuresInGrythia.Domain.csproj", "{D1CA7CE9-E3EF-43D6-BFE7-7E67B1752517}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventuresInGrythia.Web", "src\AdventuresInGrythia.Web\AdventuresInGrythia.Web.csproj", "{CDF1C679-5933-4035-B746-7035E94053B3}"
+EndProject
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "AdventuresInGrythia.Data", "src\AdventuresInGrythia.Data\AdventuresInGrythia.Data.csproj", "{92F62A39-988E-497C-A56F-30E645954E9F}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Debug|x64 = Debug|x64
+		Debug|x86 = Debug|x86
+		Release|Any CPU = Release|Any CPU
+		Release|x64 = Release|x64
+		Release|x86 = Release|x86
+	EndGlobalSection
+	GlobalSection(SolutionProperties) = preSolution
+		HideSolutionNode = FALSE
+	EndGlobalSection
+EndGlobal
