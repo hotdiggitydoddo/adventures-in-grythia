@@ -3,5 +3,10 @@
   <PropertyGroup>
     <TargetFramework>netstandard1.6</TargetFramework>
   </PropertyGroup>
-
+  <ItemGroup>
+    <PackageReference Include="MoonSharp" Version="2.0.0" />
+  </ItemGroup>
+ <ItemGroup>
+    <ProjectReference Include="..\AdventuresInGrythia.Domain\AdventuresInGrythia.Domain.csproj" />
+  </ItemGroup>
 </Project>
