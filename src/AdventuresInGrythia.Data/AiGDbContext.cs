@@ -4,13 +4,13 @@ using Microsoft.EntityFrameworkCore;
 
 namespace AdventuresInGrythia.Data
 {
-     public class AiGDbContext : IdentityDbContext<User, IdentityRole<int>, int>
+    public class AiGDbContext : IdentityDbContext<User, IdentityRole<int>, int>
     {
         public DbSet<Account> Accounts { get; set; }
-        public DbSet<Entity> Entities {get; set;}
-        public DbSet<Trait> Traits {get; set;}
-        public DbSet<Account_Entity> Characters {get; set;}
-        public DbSet<Entity_Command> Commands {get; set;}
+        public DbSet<Entity> Entities { get; set; }
+        public DbSet<Trait> Traits { get; set; }
+        public DbSet<Account_Entity> Characters { get; set; }
+        public DbSet<Entity_Command> Commands { get; set; }
 
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder)
         {
@@ -37,6 +37,11 @@ namespace AdventuresInGrythia.Data
 
             builder.Entity<Account_Entity>()
                 .HasKey(x => new { x.AccountId, x.EntityId });
+            
+            builder.Entity<Entity>()
+                .HasMany(x => x.Children)
+                .WithOne(x => x.Parent)
+                .HasForeignKey(x => x.ParentId);
         }
     }
 }
