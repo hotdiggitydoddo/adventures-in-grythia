@@ -11,7 +11,7 @@ namespace AdventuresInGrythia.Engine.Objects
         public ComponentSet Components { get; }
         public List<int> Children {get;}
         public int? Parent {get; set;}
-        public AiGEntity(int id, int? parent = null, string name = null)
+        public AiGEntity(int id, string name = null, int? parent = null)
         {
             Name = name ?? "-none-";
             Id = id;

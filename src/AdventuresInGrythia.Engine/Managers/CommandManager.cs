@@ -125,7 +125,7 @@ namespace AdventuresInGrythia.Engine.Managers
                 Game.Instance.DoAction(new AiGAction("infotoplayer", entityId, 0, string.Join(", ", GetCommands(entityId))));
                 return false;
             }
-            if (!_commandSet.ContainsKey(verb))
+            if (!_commandsSet.ContainsKey(verb))
                 //Send error to client -- command doesn't exist
                 return false;
             if (!_entityCommands[entityId].Contains(verb))
@@ -136,7 +136,7 @@ namespace AdventuresInGrythia.Engine.Managers
 
         private void Execute(int entityId, string cmdName, params string[] args)
         {
-            var script = _commandSet[cmdName];
+            var script = _commandsSet[cmdName];
             try
             {
                 script.Call(script.Globals["execute"], entityId, args);

@@ -48,24 +48,24 @@ namespace AdventuresInGrythia.Engine.Actions
 
         public void Hook()
         {
-            Game.Instance.GetEntityById(SenderId).Components.AddHook(this);
-            if (ReceiverId > 0)
-                Game.Instance.GetEntityById(ReceiverId).Components.AddHook(this);
-            if (OtherEntity1 > 0)
-                Game.Instance.GetEntityById(OtherEntity1).Components.AddHook(this);
-            if (OtherEntity2 > 0)
-                Game.Instance.GetEntityById(OtherEntity2).Components.AddHook(this);
+            // Game.Instance.GetEntityById(SenderId).Components.AddHook(this);
+            // if (ReceiverId > 0)
+            //     Game.Instance.GetEntityById(ReceiverId).Components.AddHook(this);
+            // if (OtherEntity1 > 0)
+            //     Game.Instance.GetEntityById(OtherEntity1).Components.AddHook(this);
+            // if (OtherEntity2 > 0)
+            //     Game.Instance.GetEntityById(OtherEntity2).Components.AddHook(this);
         }
         public void Unhook()
         {
             IsValid = false;
-            Game.Instance.GetEntityById(SenderId).Components.RemoveHook(this);
-            if (ReceiverId > 0)
-                Game.Instance.GetEntityById(ReceiverId).Components.RemoveHook(this);
-            if (OtherEntity1 > 0)
-                Game.Instance.GetEntityById(OtherEntity1).Components.RemoveHook(this);
-            if (OtherEntity2 > 0)
-                Game.Instance.GetEntityById(OtherEntity2).Components.RemoveHook(this);
+            // Game.Instance.GetEntityById(SenderId).Components.RemoveHook(this);
+            // if (ReceiverId > 0)
+            //     Game.Instance.GetEntityById(ReceiverId).Components.RemoveHook(this);
+            // if (OtherEntity1 > 0)
+            //     Game.Instance.GetEntityById(OtherEntity1).Components.RemoveHook(this);
+            // if (OtherEntity2 > 0)
+            //     Game.Instance.GetEntityById(OtherEntity2).Components.RemoveHook(this);
         }
 
         public int CompareTo(TimedAiGAction other)

@@ -29,30 +29,30 @@ namespace AdventuresInGrythia.Engine.Managers
             _actionRunnerScripts = new Dictionary<string, string>();
             _commandScripts = new Dictionary<string, string>();
 
-            UserData.RegisterType<Script>();
-            UserData.RegisterType<IMessageHandler>();
-            UserData.RegisterType<Task>();
-            UserData.RegisterType<MudCommand>();
-            UserData.RegisterType<ComponentSet>();
-            UserData.RegisterType<MudComponent>();
-            UserData.RegisterType<TraitSet>();
-            UserData.RegisterType<MudTrait>();
-            UserData.RegisterType<Table>();
-            UserData.RegisterType<Game>();
+            // UserData.RegisterType<Script>();
+            // UserData.RegisterType<IMessageHandler>();
+            // UserData.RegisterType<Task>();
+            // UserData.RegisterType<MudCommand>();
+            // UserData.RegisterType<ComponentSet>();
+            // UserData.RegisterType<MudComponent>();
+            // UserData.RegisterType<TraitSet>();
+            // UserData.RegisterType<MudTrait>();
+            // UserData.RegisterType<Table>();
+            // UserData.RegisterType<Game>();
             //UserData.RegisterType<List<MudEntity>>();
 
-            UserData.RegisterType<MudEntity>();
-            UserData.RegisterType<List<MudEntity>>();
-            UserData.RegisterType<MudAccount>();
-            UserData.RegisterType<MudRoom>();
+          //  UserData.RegisterType<MudEntity>();
+           // UserData.RegisterType<List<MudEntity>>();
+          //  UserData.RegisterType<MudAccount>();
+          //  UserData.RegisterType<MudRoom>();
             //UserData.RegisterType<MudPortal>();
-            UserData.RegisterType<MudZone>();
-            UserData.RegisterType<List<MudEntity>>();
-            UserData.RegisterType<List<MudRoom>>();
+           // UserData.RegisterType<MudZone>();
+          //  UserData.RegisterType<List<MudEntity>>();
+          //  UserData.RegisterType<List<MudRoom>>();
             //UserData.RegisterType<List<MudPortal>>();
-            UserData.RegisterType<List<MudZone>>();
-            UserData.RegisterType<MudWorld>();
-            UserData.RegisterType<MudAction>();
+          //  UserData.RegisterType<List<MudZone>>();
+          //  UserData.RegisterType<MudWorld>();
+          //  UserData.RegisterType<MudAction>();
         }
 
         // public bool AddScript(string name, string lua)
