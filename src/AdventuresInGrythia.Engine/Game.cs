@@ -24,8 +24,14 @@ namespace AdventuresInGrythia.Engine
             Instance = this;
             _entityManager = entityMgr;
             _commandManager = commandMgr;
-
             _commandManager.Init(this);
+
+            _entities = new Dictionary<int, AiGEntity>();
+            _rooms = new Dictionary<int, AiGRoom>();
+            _regions = new Dictionary<int, AiGRegion>();
+            _zones = new Dictionary<int, AiGZone>();
+            _portals = new Dictionary<int, AiGPortal>();
+            _portalEntries = new Dictionary<int, AiGPortalEntry>();
         }
 
         public void DoAction(AiGAction action)

@@ -122,7 +122,7 @@ namespace AdventuresInGrythia.Engine.Managers
             if (verb == "commands")
             {
                 //need to communicate available commands to player.
-                Game.Instance.DoAction(new MudAction("infotoplayer", entityId, 0, string.Join(", ", GetCommands(entityId))));
+                Game.Instance.DoAction(new AiGAction("infotoplayer", entityId, 0, string.Join(", ", GetCommands(entityId))));
                 return false;
             }
             if (!_commandSet.ContainsKey(verb))

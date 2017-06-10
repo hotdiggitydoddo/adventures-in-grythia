@@ -7,10 +7,10 @@ namespace AdventuresInGrythia.Engine.Managers
 {
     public class LocationManager
     {
-        readonly IRepository<Room> _rooms;
+        readonly IRepository<Entity> _rooms;
         public int SaveRoom(AiGRoom room)
         {
-            var existing = _rooms.GetById(room.Id, x => x.Traits, x => x.Components, x => x.Entities);
+            var existing = _rooms.GetById(room.Id, x => x.Traits, x => x.Components, x => x.Children, x => x.Parent);
             if (existing != null)
             {
                 //Update Traits
@@ -58,7 +58,7 @@ namespace AdventuresInGrythia.Engine.Managers
                 _rooms.Update(existing);
                 return room.Id;
             }
-            
+
             var newRoom = new Room { Name = room.Name, RegionId = room.RegionId };
             newRoom.Traits = new List<Trait>();
             newRoom.Components = new List<Entity_Component>();
