@@ -1,11 +1,11 @@
-local this = MudComponent;
+local this = Component;
 
 -- Traits
-local maxHP = MudTrait;
-local currHP = MudTrait;
+local maxHP = Trait;
+local currHP = Trait;
 
 function init (entity, script, defaults)
-	this = MudComponent.__new(entity, "health", script);
+	this = Component.__new(entity, "health", script);
 
     maxHP = this.Owner.Traits.Get("maxHP");
     currHP = this.Owner.Traits.Get("currHP");

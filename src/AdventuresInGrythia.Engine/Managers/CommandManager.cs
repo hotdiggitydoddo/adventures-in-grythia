@@ -11,6 +11,8 @@ namespace AdventuresInGrythia.Engine.Managers
     public interface ICommandManager
     {
         void Init(Game game);
+        void LoadCommandsForEntity(int entityId);
+        void LoadCommandsSet();
     }
     public class CommandManager : ICommandManager
     {
